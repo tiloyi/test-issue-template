@@ -13,9 +13,8 @@ body:
     id: package-concerned
     attributes:
       label: I am opening an issue for
-      description: 'The issue occurs on:'
       options:
-        - Documentation
+        - Styleguide documentation
         - Figma
         - Icons
         - Styles (CSS, SCSS, ...)
@@ -35,7 +34,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: A clear and concise description of what the bug is
+      placeholder: A clear and concise description of what the bug is
     validations:
       required: true
   - type: input
@@ -43,7 +42,7 @@ body:
     attributes:
       label: Github repository
       description: To better help you, please indicate the url of your GitHub repo
-      placeholder: ex. https://github.com/adeo/mozaic-vue
+      placeholder: ex. https://github.com/adeo/mozaic-design-system
   - type: input
     id: mockups
     attributes:
@@ -94,7 +93,7 @@ body:
     id: additional-comments
     attributes:
       label: Additional comments
-      description: Add any other comments about the problem here.
+      description: Add any other comments about the problem here
       placeholder: |
         Is this a browser specific issue? If so, please specify the browser and version.
         Do you have specific setup for sketch, plugins, etc...
@@ -103,6 +102,6 @@ body:
     attributes:
       value: |
         # :raising_hand: Have you thought making a contribution?
-        **Mozaic-Vue** is an innersource project, **open to free contribution**.
+        **Mozaic** is an innersource project, **open to free contribution**.
         The contribution is one of the ways to get quickly a fix to your problem.
         To learn more, please read our [contribution guidelines](https://github.com/adeo/mozaic-vue/blob/master/CONTRIBUTING.md).
